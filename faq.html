@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;800&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="./css/area.css" />
+        <title>Calculadora de la construccion</title>
+    </head>
+    <body>
+        <header>
+            <h1>CALCULADORA DE LA CONSTRUCIÓN</h1>
+        </header>
+       
+        <section>
+            <div class="area">
+                <h2>Calcula el área</h2>
+                <form action="">
+                    <label for="inputArea">
+                        <p>Escribe cuanto mide el lado A</p></label
+                    >
+                    <input
+                        id="inputArea"
+                        type="number"
+                        placeholder="Cuanto mide el lado A?"
+                    />
+                    <label for="inputArea"
+                        ><p>Escribe cuanto mide el lado B</p>
+                    </label>
+                    <input
+                        id="inputArea"
+                        type="number"
+                        placeholder="Cuanto mide el lado b?"
+                    />
+
+                    <button type="button" onclick="calcularPerimetro">
+                        Calcular Área
+                    </button>
+                    <button type="button" onclick="calcularPerimetro">
+                        Calcular el perímetro
+                    </button>
+                </form>
+            </div>
+        </section>
+        <section>
+            <div class="menuvolver">
+                <a href="./index.html">INICIO</a>
+            </div>
+            <div class="menuvolver">
+                <a href="./volumenes.html">CALCULAR VOLUMEN</a>
+            </div>
+            <div class="menuvolver">
+                <a href="./materiales.html">CALCULAR MATERIALES</a>
+            </div>
+            <div class="menuvolver">
+               <a href="./precios.html">CALCULAR PRECIOS</a>
+            </div>
+        </section>
+        <footer>
+            <p>2021 | version 0.1</p>
+        </footer>
+    </body>
+</html>
