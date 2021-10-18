@@ -17,39 +17,100 @@
     </head>
     <body>
         <header>
-            <h1>CALCULADORA DE LA CONSTRUCIÓN</h1>
+            <h1>CALCULADORA DE LA CONSTRUCCIÓN</h1>
         </header>
 
         <section>
+            <div class="regresar">
+                <a class="regresar_boton" href="index.html">VOLVER AL INICIO</a>
+            </div>
+        </section>
+        <section>
             <div class="area">
-                <h2>Calcula el área</h2>
+                <h2>Calculá el perímetro y el área de un rectangulo </h2>
+                
                 <form action="">
-                    <label for="inputArea">
+                    <label for="area de un rectangulo">
                         <p>Escribe cuanto mide el lado A</p></label
                     >
                     <input
-                        id="inputArea"
+                        id="valor1"
                         type="number"
-                        placeholder="Cuanto mide el lado A?"
                     />
-                    <label for="inputArea"
+                    <label for=""
                         ><p>Escribe cuanto mide el lado B</p>
                     </label>
                     <input
-                        id="inputArea"
+                        id="valor2"
                         type="number"
-                        placeholder="Cuanto mide el lado b?"
                     />
-
-                    <button type="button" onclick="calcularPerimetro">
-                        Calcular Área
-                    </button>
-                    <button type="button" onclick="calcularPerimetro">
+                    <button type="button" onclick="calcularPerimetro()">
                         Calcular el perímetro
                     </button>
+                    <button type="button" onclick="calcularArea()">
+                        Calcular Área
+                    </button>
+                   
+                </form>
+            </div>
+
+            <div class="area">
+                <h2>Calculá el perímetro y el área de un círculo</h2>
+
+                <form action="">
+                    <label for="area de un rectangulo">
+                        <p>Escribe cuanto mide el lado A</p></label
+                    >
+                    <input
+                        id="valor1"
+                        type="number"
+                    />
+                    <label for=""
+                        ><p>Escribe cuanto mide el lado B</p>
+                    </label>
+                    <input
+                        id="valor2"
+                        type="number"
+                    />
+                    <button type="button" onclick="calcularPerimetro()">
+                        Calcular el perímetro
+                    </button>
+                    <button type="button" onclick="calcularArea()">
+                        Calcular Área
+                    </button>
+                   
+                </form>
+            </div>
+
+            <div class="area">
+                <h2>Calculá el perímetro y el área de un círculo</h2>
+
+                <form action="">
+                    <label for="area de un rectangulo">
+                        <p>Escribe cuanto mide el lado A</p></label
+                    >
+                    <input
+                        id="valor1"
+                        type="number"
+                    />
+                    <label for=""
+                        ><p>Escribe cuanto mide el lado B</p>
+                    </label>
+                    <input
+                        id="valor2"
+                        type="number"
+                    />
+                    <button type="button" onclick="calcularPerimetro()">
+                        Calcular el perímetro
+                    </button>
+                    <button type="button" onclick="calcularArea()">
+                        Calcular Área
+                    </button>
+                   
                 </form>
             </div>
         </section>
+
         <section>
             <div class="menuvolver">
                 <a href="./index.html">INICIO</a>
@@ -64,8 +125,12 @@
                 <a href="./precios.html">CALCULAR PRECIOS</a>
             </div>
         </section>
+        
         <footer>
             <p>2021 | version 0.1</p>
         </footer>
+
+        <script src="./Js/areas.js"></script>
+
     </body>
 </html>

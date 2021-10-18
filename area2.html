@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <title>Área | Calculadora de la construccion</title>
+        <link rel="stylesheet" href="./css/area.css" />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;800&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+        <header>
+            <h1>CALCULADORA DE LA CONSTRUCIÓN 2</h1>
+        </header>
+
+        <section>
+            <form
+                action="javascript:calcularArea()"
+                onchange="javascript:updateForm()"
+            >
+                <label for="id_Figuras"> Elegi la figura a calcular</label>
+                <select name="" id="id_Figuras">
+                    <option value="rectangulo" selected>Rectangulo</option>
+                    <option value="triangulo" selected>Triángulo</option>
+                    <option value="triangulo_Isosceles" selected>
+                        Triángulo Isosceles
+                    </option>
+                    <option value="circulo" selected>Circulo</option>
+                </select>
+            </form>
+
+            <br />
+
+        <article id="id_rectangulos">
+                <div class="area">
+                    <h2>Calculá el perímetro y el área de un rectangulo</h2>
+
+                    <form action="">
+                        <label for="area de un rectangulo">
+                            <p>Escribe cuanto mide el lado A</p></label
+                        >
+                        <input id="valor1" type="number" />
+                        <label for=""
+                            ><p>Escribe cuanto mide el lado B</p>
+                        </label>
+                        <input id="valor2" type="number" />
+                        <button type="button" onclick="calcularPerimetro()">
+                            Calcular el perímetro
+                        </button>
+                        <button type="button" onclick="calcularArea()">
+                            Calcular Área
+                        </button>
+                    </form>
+                </div>
+            </article>
+
+        <article id="id_triangulos" hidden>
+                <div class="area">
+                    <h2>Calculá el perímetro y el área de un triangulo</h2>
+
+                    <form action="">
+                        <label for="area de un rectangulo">
+                            <p>Escribe cuanto mide el lado A</p></label
+                        >
+                        <input id="valor1" type="number" />
+                        <label for=""
+                            ><p>Escribe cuanto mide el lado B</p>
+                        </label>
+                        <input id="valor2" type="number" />
+                        <button type="button" onclick="calcularPerimetro()">
+                            Calcular el perímetro
+                        </button>
+                        <button type="button" onclick="calcularArea()">
+                            Calcular Área
+                        </button>
+                    </form>
+                </div>
+        </article>
+
+        <article id="id_circulos" hidden>
+                <div class="area">
+                    <h2>Calculá el perímetro y el área de un círculo</h2>
+
+                    <form action="">
+                        <label for="area de un circulo">
+                            <p>Escribe cuanto mide el lado A</p></label
+                        >
+                        <input id="valor1" type="number" />
+                        <label for=""
+                            ><p>Escribe cuanto mide el lado B</p>
+                        </label>
+                        <input id="valor2" type="number" />
+                        <button type="button" onclick="calcularPerimetro()">
+                            Calcular el perímetro
+                        </button>
+                        <button type="button" onclick="calcularArea()">
+                            Calcular Área
+                        </button>
+                    </form>
+                </div>
+        </article>
+            
+        </section>
+
+        <section>
+            <div class="menuvolver">
+                <a href="./index.html">INICIO</a>
+            </div>
+            <div class="menuvolver">
+                <a href="./volumenes.html">CALCULAR VOLUMEN</a>
+            </div>
+            <div class="menuvolver">
+                <a href="./materiales.html">CALCULAR MATERIALES</a>
+            </div>
+            <div class="menuvolver">
+                <a href="./precios.html">CALCULAR PRECIOS</a>
+            </div>
+        </section>
+
+        <footer>
+            <p>2021 | version 0.1</p>
+        </footer>
+
+        <script>
+
+
+            function updateForm() {
+                //hide all inputs
+                document.getElementById("id_rectangulos").hidden = true;
+                document.getElementById("id_triangulos").hidden = true;
+                document.getElementById("id_circulos").hidden = true;
+
+                //get the selected shape and show its inputs
+                let figuras = document.getElementById("id_Figuras").value;
+                switch (figuras) {
+                    case "rectangulo":
+                        document.getElementById(
+                            "id_rectangulos"
+                        ).hidden = false;
+                        break;
+                    case "triangulo":
+                        document.getElementById("id_triangulos").hidden = false;
+                        break;
+                        case "triangulo_Isosceles":
+                        document.getElementById("id_triangulos").hidden = false;
+                        break;
+                    case "circulo":
+                        document.getElementById("id_circulos").hidden = false;
+                        break;
+                }
+            }
+        </script>
+    </body>
+</html>
