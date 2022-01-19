@@ -10,6 +10,12 @@ html {
     justify-content: center;
     height: 100%;
 }
+
+header {
+    height: 300px;
+
+    
+}
 body {
     font-size: 1.6rem;
     display: flex;
@@ -28,13 +34,7 @@ section {
     margin-top: 10px;
     width: 100%;
 }
-h1 {
-    font-family: "Montserrat", sans-serif;
-    font-size: 3.3rem;
-    color: #fff;
-    padding-top: 20px;
-    text-align: center;
-}
+
 h2 {
     text-transform: uppercase;
     font-family: "Montserrat", sans-serif;

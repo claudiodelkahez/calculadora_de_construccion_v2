@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+html {
+    font-size: 62.5%;
+}
+header {
+    width: 100vw;
+    height: 70px;
+
+    background-color: rgb(87, 131, 172);
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 15px;
+}
+.logo img {
+    height: 60px;
+}
+.titulo {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+.titulo h1 {
+    color: #fff;
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.menu {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}
+.menu span {
+    width: 30px;
+    height: 2px;
+    background-color: #fff;
+    margin: 4px 0;
+}
+body {
+    width: 100vw;
+    height: 100%;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container {
+    width: 90%;
+    max-width: 500px;
+    height: 100%;
+    padding: 10px;
+    margin-top: 15px;
+    background-color: rgb(223, 228, 236);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.seleccion {
+    width: 100%;
+    padding: 20px 0;
+}
+select {
+    margin: 10px 0;
+    width: 100%;
+    height: 30px;
+    padding: 0 20px;
+    border-radius: 5px;
+    color: rgb(65, 65, 146);
+    border: none;
+    outline: none;
+    background-color: #fff;
+}
+.inputs {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+input {
+    border: 1px solid rgb(199, 199, 199);
+    outline: none;
+    border-radius: 5px;
+    height: 30px;
+    width: 30%;
+    padding: 0 10px;
+    text-align: center;
+    font-size: 10px;
+}
+
+.resultado {
+    position: relative;
+    width: 100%;
+    background-color: #fff;
+    height: 200px;
+    border-radius: 5px;
+}
+.resultado h2 {
+    margin: 10px 0px 10px 15px;
+}
+.resultado-botones {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-bottom: 10px;
+}
+button {
+    height: 30px;
+    margin: 0 5px;
+    color: white;
+    font-weight: bold;
+    background-color: rgb(87, 131, 172);
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 0.5em 1em;
+}
+.calcular {
+    width: 100%;
+    height: 40px;
+    margin: 10px 0 20px 0;
+}

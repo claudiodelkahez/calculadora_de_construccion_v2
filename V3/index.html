@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- Autor de la pagina-->
+        <meta name="author" content="Claudio Delkahez" />
+        <!-- Title-->
+        <title>Calculadora de construccion V3</title>
+        <!-- Stylesheet-->
+        <link rel="stylesheet" href="./css/main.css" />
+        <!-- Descripcion de la pagina-->
+        <meta
+            name="description"
+            content="Calcula los materiales para tu obra. Selecciona que queres calcular, ingresa las medidas y listo! Tenes el detalle de los materiales para tu obra."
+        />
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <img src="./img/cdc.png" alt="" />
+            </div>
+            <div class="titulo">
+                <h1>
+                    Calculadora de <br />
+                    construccion
+                </h1>
+            </div>
+            <div class="menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </header>
+
+        <div class="container">
+            <div class="encabezado">
+                <h1>Que queres calcular hoy?</h1>
+                <p>Hace click abajo y seleccciona que queres calcular!</p>
+            </div>
+
+            <div class="seleccion">
+                <h3>Que vas a calcular?</h3>
+
+                <select name="" id="">
+                    <option value="">Hormigon (Piedra Partida)</option>
+                    <option value="">Hormigon (Canto Rodado)</option>
+                    <option value="">Hormigon (Armado)</option>
+                    <option value="">Hormigon (Pobre)</option>
+                </select>
+                <h3>En que unidad queres desplegar el calculo?</h3>
+                <select name="" id="">
+                    <option value="">En Kg</option>
+                    <option value="">A granel</option>
+                </select>
+            </div>
+
+            <!-- formulario de calculo de area -->
+            <div class="inputs">
+
+                <input type="number" placeholder="Base" />
+
+                <input type="number" placeholder="Altura" />
+
+                <input type="number" placeholder="profundidad" />
+            </div>
+            <button class="calcular">Calcular!</button>
+
+            <div class="resultado">
+                <h2>Resultado:</h2>
+
+                <div class="resultado-botones">
+                    <button>COPIAR</button>
+                    
+                </div>
+            </div>
+        </div>
+
+        <script src="./js/app.js"></script>
+    </body>
+</html>
